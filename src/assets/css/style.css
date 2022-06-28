@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'product-sans';
+    src: url('/src/assets/fonts/product-sans/Product\ Sans\ Regular.ttf');
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('/src/assets/fonts/Avenir_Font/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+    font-family: 'avenir-bold';
+    src: url('/src/assets/fonts/Avenir_Font/AvenirLTStd-Black.otf');
+}
+
+:root {
+    --waysbeans-primary-color           : #613D2B;
+    --waysbeans-opacity-color           : #613D2B40;
+    --waysbeans-primary-font            : 'product-sans';
+    --waysbeans-opacity-font-color      : #613d2b91;
+    --waysbeans-content-header-color    : #DBB699;
+    --waysbeans-bgproduct-color         : #F6E6DA;
+    --waysbeans-fontproduct-color       : #613D2B;
+    --waysbeans-price-color             : #974A4A;
+}
+
+.text-price-color {
+    color: var(--waysbeans-price-color) !important;
+}
+
+.text-waysbeans-color {
+    color: var(--waysbeans-primary-color) !important;
+}
+
+
+.btn-waysbeans {
+    border: none;
+    background-color: transparent;
+    border: 3px solid var(--waysbeans-primary-color);
+    color: var(--waysbeans-primary-color) !important;
+    font-family: var(--waysbeans-primary-font);
+    font-weight: 700;
+    border-radius: 5px;
+    width: 115px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 1px;
+}
+
+.btn-active-waysbeans {
+    background-color: var(--waysbeans-primary-color) !important;
+    color: white !important;
+}
+.nav-link:hover {
+    background-color: var(--waysbeans-primary-color) !important;
+    color: white !important;
+}
+
+
+.modal-heading-text {
+    font-size: 48px !important;
+    color: var(--waysbeans-primary-color);
+    font-weight: 700;
+}
+
+
+.login-box {
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.login-help {
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.login-help-link {
+    color: black !important;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+}
+
+.form-input {
+    color: var(--waysbeans-primary-color);
+    border: 2px solid var(--waysbeans-primary-color);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--waysbeans-opacity-color) !important;
+    font-size: 22px;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--waysbeans-opacity-font-color) !important;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,
+.form-input:hover,.form-input:focus,.form-input:active,
+.btn-primary:active:focus:not(:disabled):not(.disabled),
+.btn:focus, .btn:active, .btn:hover{
+    box-shadow: none !important;
+    outline: 0;
+}
+
+
+.box-content {
+    max-width: 1080px !important;
+    margin: 50px auto;
+    
+}
+
+.box-content-header {
+    background-color: var(--waysbeans-content-header-color);
+    width: 90%;
+    height: 400px !important;
+}
+
+.content-slogan {
+    font-weight: 400;
+}
+
+
+.card-body {
+    background-color: var(--waysbeans-bgproduct-color) !important;
+}
+
+.card-title {
+    color       : var(--waysbeans-fontproduct-color) !important;
+    font-size   : 18px;
+    font-weight : 800;
+}
+
+
+.card-text {
+    font-family: 'avenir';
+    font-weight: 400;
+    color: var(--waysbeans-price-color);
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.card-text2 {
+    font-family: 'avenir';
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--waysbeans-price-color);
+    line-height: 10px;
+    margin-bottom: 1px;
+}
+
+.detail-title {
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--waysbeans-primary-color);
+}
+
+.detail-product p{
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24.59px;
+    text-align: justify;
+}
+
+.detail-price {
+    color: var(--waysbeans-price-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32.78px;
+    text-align: left;
+}
+
+
+.img-nav-profile {
+    clip-path: circle(50%);
+}
+
+
+
+
+.btnDrop {
+    border: none;
+    background: transparent;
+}
+
+.btnDrop img {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.nav-item-user {
+    font-family: 'avenir';
+}
+
+.dropdown-divider {
+    border-top: 2px solid !important;
+}
+
+.white-triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: black;
+    width: 10;
+    top: 0;
+    right: 0;
+    height: 50;
+}
+
+.dropdown-item:active, dropdown-item:active:focus:not(:disabled):not(.disabled), .dropdown-item:focus {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+.product-name {
+    font-family: 'avenir';
+    color: var(--waysbeans-primary-color);
+    font-size: 36px;
+    font-weight: 800;
+}
+
+
+.table-header {
+    background-color: #e6e6e6;
+    font-size: 18px;
+}
+
+.table-bordered {
+    border-radius: 100px !important;
+    border: 3px solid #c1c1c1 !important;
+}
+
+.danger {
+    margin-right: 5px;
+    font-weight: 600 !important;
+    background-color: #FF0742 !important;
+    width: 90px;
+    border-radius: 5px !important;
+    line-height: 18px !important;
+    font-size: 16px !important;
+    border: none !important;
+}
+
+.safe {
+    margin-left: 5px;
+    border: none !important;
+    font-weight: 600 !important;
+    background-color: #0ACF83 !important;
+    width: 90px;
+    border-radius: 5px !important;
+    line-height: 20px !important;
+    font-size: 16px !important;
+}
+
+.img-icon {
+    width: 20px;
+    height: 30px;
+}
+
+
+.clip-icon {
+    position: absolute;
+    right: 0;
+}
+
+.input-file::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.input-file::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.input-file {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    color: transparent !important;
+}
+
+.file-placeholder {
+    position: absolute !important;
+    font-size: 23px;
+    color: #613d2ba8;
+}
+
+.desc-holder::-webkit-input-placeholder {
+    color: #613d2ba8 !important;
+}
+
+
+.cancelbtn { 
+    font-weight: 700 !important;
+    background-color: #FF0742 !important;
+    color: white !important;
+}
+
+.editbtn {
+    font-weight: 700 !important;
+    color: white !important;
+    background-color: #0ACF83 !important;
+}
+
+
+.profile-title {
+    font-family: "avenir-bold" !important;
+    color: var(--waysbeans-primary-color) !important;
+    font-weight: 900 !important;
+}
+
+.profile-describe {
+    font-family: "avenir-bold" !important;
+    color: #613d2bd6 !important;
+    font-weight: 900 !important;
+}
+
+.user-button {
+    background: transparent !important;
+    border: none !important;
+    font-family: "avenir";
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.pembatas {
+    border: 1.5px solid !important;
+}
+
+.input-chat, .input-chat:active, input-chat:active:focus:not(:disabled):not(.disabled), .input-chat:focus {
+    background-color: #C4C4C4 !important;
+    border-radius: 10px !important;
+    outline: none !important;
+    border: none !important;
+    font-weight: 500;
+}
+
+.input-chat::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.413) !important;
+}
+
+.chat-canvas {
+    overflow-y: scroll;
+}
+
+
+
+.chat-canvas::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+
+.chat-canvas::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #C4C4C4 !important;
+}
+
+.transaction {
+    background-color: #F6E6DA;
+    height: 150px;
+}
+
+.transaction-title {
+    color: var(--waysbeans-primary-color) !important;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 2px;
+    margin-bottom: 17px;
+}
+
+
+.transaction-sub-title {
+    color: var(--waysbeans-primary-color) !important;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 10px;
+}
+
+.transaction-price {
+    color: var(--waysbeans-price-color);
+    font-weight: 400;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 6px;
+}
+
+.img-transaction {
+    width: 80px;
+    height: 120px;
+}
+
+
+.status-pending {
+    color: rgb(106, 106, 9);
+    font-size: 13px;
+    background-color: yellow;
+    text-align: center;
+}
+
+
+.status-failed {
+    color: #8c1a24;
+    font-size: 13px;
+    background-color: #d93e4b;
+    text-align: center;
+}
+
+.status-cancel {
+    color: #8c1a24;
+    font-size: 13px;
+    background-color: #d93e4b;
+    text-align: center;
+}
+
+
+.status-approve {
+    color:#00D1FF;
+    font-size: 13px;
+    background-color: #094755;
+    text-align: center;
+}
+
+.status-success {
+    color: #337f36;
+    font-size: 13px;
+    background-color: #84d787;
+    text-align: center;
+}
+
+.transaction-canvas {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+
+
+.transaction-canvas::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+
+.transaction-canvas::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: var(--waysbeans-primary-color);
+}
+
+.list-group {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+
+
+.list-group::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+
+.list-group::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #C4C4C4;
+}
+
+.card-layouts {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 24.9%;
+}
+
+
+.cart-title {
+    color: #613D2B;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+.cart {
+    border-top: var(--waysbeans-primary-color) solid 2px;
+    border-bottom: var(--waysbeans-primary-color) solid 2px;
+}
+
+.cart-image {
+    width: 80px;
+    height: 90px;
+}
+
+.cart-name {
+    color: var(--waysbeans-primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cart-price {
+    color: var(--waysbeans-price-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cart-calculate {
+    color: var(--waysbeans-primary-color) !important;
+    background-color: transparent !important;
+    border: none !important;
+    font-weight: 900;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 28px;
+}
+
+.cart-qty {
+    color: var(--waysbeans-primary-color) !important;
+    background-color: #F6E6DA !important;
+    width: 45px;
+    border-radius: 10px;
+    height: 38px;
+    font-weight: 500 !important;
+    margin: 0 10px 0 10px ;
+    font-size: 18px;
+    padding-top: 5px !important;
+    font-weight: 700;
+}
+
+.cart-remove {
+    border: none !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.price {
+    border-top: var(--waysbeans-primary-color) solid 2px;
+    border-bottom: var(--waysbeans-primary-color) solid 2px;
+}
