@@ -67,7 +67,7 @@ export default function Home() {
                     :
                     (
                         product?.map(item => (
-                            <button type="button" className="card-layouts" data-bs-toggle="modal" data-bs-target="#loginModal" style={{ border: "none", backgroundColor: "transparent", textAlign: "left"}}>
+                            <button type="button" key={item?.id} className="card-layouts" data-bs-toggle="modal" data-bs-target="#loginModal" style={{ border: "none", backgroundColor: "transparent", textAlign: "left"}}>
                                 <div className="card mt-5" style={{width: '15.5rem'}}>
                                     <img src={serverUrlUploads + item?.image} className="card-img-top img-fluid w-100" height={312} alt="beansprdct"/>
                                     <div className="card-body">

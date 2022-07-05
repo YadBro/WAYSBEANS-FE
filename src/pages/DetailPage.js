@@ -1,8 +1,6 @@
-import { useContext, useEffect } from "react";
-import { useMutation, useQuery } from "react-query";
-import { useNavigate, useParams } from "react-router-dom";
+import { useQuery } from "react-query";
+import { useParams } from "react-router-dom";
 import { API } from "../config/api";
-import { UserContext } from "../context/UserContext";
 import NavbarPartial from "../partials/NavbarPartial";
 import { useShoppingCart } from "use-shopping-cart";
 

@@ -4,7 +4,7 @@ import clipIcon from "../assets/image/icon/clip-icon.png";
 import NotFoundImage from "../assets/image/NotFoundImage.jpg";
 import { useMutation, useQuery } from "react-query";
 import { API } from "../config/api";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 
 
@@ -23,8 +23,6 @@ export default function UpdateProfilePage() {
         gender      : ""
     });
     
-    const navigate  = useNavigate();
-
     const [notif, setNotif] = useState({
         success : '',
         error   : ''

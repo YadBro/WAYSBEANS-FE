@@ -2,7 +2,7 @@ import trashIcon from "../assets/image/icon/trash-icon.png";
 import { useShoppingCart } from "use-shopping-cart"
 import NavbarPartial from "../partials/NavbarPartial";
 import { useContext, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery } from "react-query";
 import { API } from "../config/api";
 import { UserContext } from "../context/UserContext";

@@ -101,6 +101,7 @@ export default function EditProduct() {
                 }, 2000);                    
             }
         } catch (error) {
+            console.log(error);
             if (error) {
                 setTimeout(() => {
                     setIsLoading(false);
