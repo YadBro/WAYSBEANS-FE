@@ -7,13 +7,16 @@ import { useShoppingCart } from "use-shopping-cart";
 
 export default function DetailPage() {
     document.title  = "Detail Product";
-
+    
     const { id }    = useParams();
+    
     const { addItem }   = useShoppingCart();
+
     const { data: productData } = useQuery("productCache", async () => {
         const response  = await API.get("/products/" + id);
         return response.data.data.product;
     });
+
     const formatterPrice    = new Intl.NumberFormat('id-ID', {
         style       : 'currency',
         currency    : 'IDR'

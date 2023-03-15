@@ -1,22 +1,22 @@
 import trashIcon from "../assets/image/icon/trash-icon.png";
-import { useShoppingCart } from "use-shopping-cart"
 import NavbarPartial from "../partials/NavbarPartial";
 import { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery } from "react-query";
 import { API } from "../config/api";
 import { UserContext } from "../context/UserContext";
+import { useShoppingCart } from "use-shopping-cart";
 
 export default function CartPage() {
     document.title  = "Cart";
     const navigate  = useNavigate();
     const { user }  = useContext(UserContext);
+    
 
+    const {cartCount, cartDetails, incrementItem, decrementItem, removeItem, totalPrice, clearCart} = useShoppingCart();
 
-    const { cartCount, cartDetails, incrementItem, decrementItem, removeItem, totalPrice, clearCart} = useShoppingCart();
     const keys   = Object.keys(cartDetails);
     const entries   = Object.entries(cartDetails);
-
 
     const { data: productData } = useQuery("productCache", async () => {
         const response  = await API.get("/products/" + keys[0]);
@@ -113,7 +113,7 @@ export default function CartPage() {
     }, []);
     
     function CartItem() {
-        
+
         return (
             <>
                 <div className="cart">

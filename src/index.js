@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { UserProvider } from './context/UserContext';
 import { LoginProvider } from './context/AuthenticatedContext';
 import { CartProvider } from 'use-shopping-cart';
 
-const queryClient = new QueryClient()
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +18,12 @@ root.render(
       <QueryClientProvider client={queryClient}>
         <LoginProvider>
           <UserProvider>
-            <CartProvider mode="payment" cartMode='checkout-session' stripe={process.env.REACT_APP_STRIPE_PUBLIC_KEY} currency='USD'>
+            <CartProvider
+              mode="payment"
+              cartMode="checkout-session"
+              stripe={process.env.REACT_APP_STRIPE_PUBLIC_KEY}
+              currency="USD"
+            >
               <App />
             </CartProvider>
           </UserProvider>
